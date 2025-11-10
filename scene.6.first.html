@@ -1,0 +1,425 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daughters of Dawn</title>
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f1e8 0%, #e8e0d3 50%, #d4c5b0 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.8;
+            color: #2c2416;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(139, 195, 74, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(76, 175, 80, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            line-height: 1.9;
+            color: #3a3225;
+            margin-bottom: 50px;
+            text-align: justify;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: fadeInUp 1.2s ease-out;
+            position: relative;
+        }
+
+        p::first-letter {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #5d8a3f;
+            float: left;
+            line-height: 0.8;
+            margin-right: 8px;
+            margin-top: 4px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+            animation: fadeIn 1.5s ease-out 0.3s both;
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+
+        img:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        img:first-of-type {
+            animation: slideInLeft 1s ease-out 0.5s both;
+        }
+
+        img:last-of-type {
+            animation: slideInRight 1s ease-out 0.7s both;
+        }
+
+        .next-link {
+            display: inline-block;
+            margin-top: 60px;
+            padding: 13px 25px;
+            background: linear-gradient(135deg, #5d8a3f 0%, #7cb342 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(93, 138, 63, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out 1s both;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .next-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .next-link:hover::before {
+            left: 100%;
+        }
+
+        .next-link:hover {
+            transform: translateX(-50%) translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(93, 138, 63, 0.6);
+            background: linear-gradient(135deg, #7cb342 0%, #9ccc65 100%);
+        }
+
+        .next-link:active {
+            transform: translateX(-50%) translateY(-2px) scale(1.02);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+
+            p::first-letter {
+                font-size: 2.5rem;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin: 50px 0;
+            }
+
+            img {
+                height: 300px;
+            }
+
+            .next-link {
+                padding: 15px 35px;
+                font-size: 0.95rem;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            p {
+                font-size: 1rem;
+                padding: 20px;
+                text-align: left;
+            }
+
+            p::first-letter {
+                font-size: 2rem;
+            }
+
+            img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Laila planted a new tree beside the old one—a living emblem of hope and renewal. As she gently placed the sapling into the soil, she whispered, "For every girl who still waits." Both the earth and her spirit had undergone a process of healing. The roots of hope extended deep into the ground, surpassing the depth of past wounds and sorrow. In time, children gathered beneath the shade of the new tree, reading where ashes had once fallen. The transformation was complete—both the world and Laila herself had changed. The enduring cycle of silence had finally been broken.</p>
+        
+        <div class="image-gallery">
+            <img src="https://cdn.imgsearch.com/batches/6/thumbnails/md/156966.webp?token=4hkQTWMs8p_Jqf37I70pnIsM7DG3yNF-NhRdm1ZusHU&expires=10000000000" alt="Tree of hope and renewal">
+            <img src="https://media.istockphoto.com/id/675368104/photo/home-farming-woman-planting-tomato-seedlings.jpg?s=612x612&w=0&k=20&c=MKjn0ckfB7AM-TJT9ANzHedWOFs9sMZ_JvBgLJbHUI0=" alt="Planting new life">
+        </div>
+        
+        <a href="scene.6.second.html" class="next-link">Speak to the world</a>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daughters of Dawn</title>
+<link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f1e8 0%, #e8e0d3 50%, #d4c5b0 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    line-height: 1.8;
+    color: #2c2416;
+    position: relative;
+    overflow-x: hidden;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(139, 195, 74, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(76, 175, 80, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #3a3225;
+    margin-bottom: 50px;
+    text-align: justify;
+    padding: 40px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    animation: fadeInUp 1.2s ease-out;
+    position: relative;
+}
+p::first-letter {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #5d8a3f;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+    margin: 50px 0;
+    animation: fadeIn 1.5s ease-out 0.3s both;
+}
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+    border: 3px solid rgba(255,255,255,0.5);
+}
+img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+img:first-of-type { animation: slideInLeft 1s ease-out 0.5s both; }
+img:last-of-type { animation: slideInRight 1s ease-out 0.7s both; }
+.next-link {
+    display:inline-block;
+    margin-top:60px;
+    padding:13px 25px;
+    background: linear-gradient(135deg, #5d8a3f 0%, #7cb342 100%);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-family:'Inter', sans-serif;
+    font-size:0.9rem;
+    font-weight:500;
+    letter-spacing:1px;
+    box-shadow:0 8px 25px rgba(93,138,63,0.4);
+    transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+    position:relative;
+    overflow:hidden;
+    animation:fadeInUp 1s ease-out 1s both;
+    left:50%;
+    transform:translateX(-50%);
+}
+.next-link::before {
+    content:'';
+    position:absolute;
+    top:0; left:-100%;
+    width:100%; height:100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition:left 0.6s;
+}
+.next-link:hover::before { left:100%; }
+.next-link:hover {
+    transform:translateX(-50%) translateY(-5px) scale(1.05);
+    box-shadow:0 12px 35px rgba(93,138,63,0.6);
+    background: linear-gradient(135deg, #7cb342 0%, #9ccc65 100%);
+}
+.next-link:active { transform:translateX(-50%) translateY(-2px) scale(1.02); }
+
+@keyframes fadeInUp { from{opacity:0;transform:translateY(40px);} to{opacity:1;transform:translateY(0);} }
+@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+@keyframes slideInLeft { from{opacity:0;transform:translateX(-50px);} to{opacity:1;transform:translateX(0);} }
+@keyframes slideInRight { from{opacity:0;transform:translateX(50px);} to{opacity:1;transform:translateX(0);} }
+
+@media (max-width: 768px){
+    body {padding: 20px 15px;}
+    p {font-size: 1.1rem;padding:25px;margin-bottom:30px;}
+    p::first-letter { font-size:2.5rem; }
+    .image-gallery { grid-template-columns:1fr; gap:20px; margin:50px 0;}
+    img { height:300px; }
+    .next-link { padding:15px 35px; font-size:0.95rem; margin-top:40px; }
+}
+
+@media (max-width: 480px){
+    p { font-size:1rem; padding:20px; text-align:left; }
+    p::first-letter { font-size:2rem; }
+    img { height:250px; }
+}
+
+@media (max-width: 360px){
+    p { font-size:0.85rem; padding:15px; }
+    p::first-letter { font-size:1.8rem; }
+    .next-link { font-size:0.85rem; padding:10px 20px; margin-top:30px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <p>Laila planted a new tree beside the old one—a living emblem of hope and renewal. As she gently placed the sapling into the soil, she whispered, "For every girl who still waits." Both the earth and her spirit had undergone a process of healing. The roots of hope extended deep into the ground, surpassing the depth of past wounds and sorrow. In time, children gathered beneath the shade of the new tree, reading where ashes had once fallen. The transformation was complete—both the world and Laila herself had changed. The enduring cycle of silence had finally been broken.</p>
+    
+    <div class="image-gallery">
+        <img src="https://cdn.imgsearch.com/batches/6/thumbnails/md/156966.webp?token=4hkQTWMs8p_Jqf37I70pnIsM7DG3yNF-NhRdm1ZusHU&expires=10000000000" alt="Tree of hope and renewal">
+        <img src="https://media.istockphoto.com/id/675368104/photo/home-farming-woman-planting-tomato-seedlings.jpg?s=612x612&w=0&k=20&c=MKjn0ckfB7AM-TJT9ANzHedWOFs9sMZ_JvBgLJbHUI0=" alt="Planting new life">
+    </div>
+    
+    <a href="scene.6.second.html" class="next-link">Speak to the world</a>
+</div>
+</body>
+</html>

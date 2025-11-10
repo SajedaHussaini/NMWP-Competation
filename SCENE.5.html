@@ -1,0 +1,473 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daughters of Dawn</title>
+  <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #fff8f2, #fdece4);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    p {
+      width: 80%;
+      max-width: 800px;
+      margin: 100px auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      text-align: justify;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1.8s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      max-width: 850px;
+      margin: 60px auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(60px);
+      animation: fadeUp 2s ease forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p:last-of-type {
+      text-align: center;
+      margin-top: 0px;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: #0056b3;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    p:last-of-type:hover {
+      color: #d17b00;
+      transform: scale(1.05);
+    }
+
+    .fade-section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.3s ease, transform 1.3s ease;
+    }
+
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <p class="fade-section">
+    In the city, Laila encountered a community of young women who, like herself, carried both visible and invisible scars—marks of pain, endurance, and survival. 
+    They shared stories born from oppression but shaped by resilience. 
+    United by a common purpose, they began to transform their experiences into action. 
+    Together, they wrote words that demanded to be heard, raised their voices against silence, and marched toward a vision of freedom and equality.
+    The same world that had once sought to silence them now found itself compelled to listen. 
+    What had once been faint whispers in the darkness grew into a chorus of defiance and hope. 
+    Their collective voices, once restrained by fear and injustice, evolved into a powerful symphony of change, echoing through streets, schools, and the hearts of countless others who longed for liberation.
+  </p>
+
+  <img class="fade-section" src="./Firefly_A group of young Muslim women standing together in an urban street at dusk, holding n 838394.png" alt="">
+
+  <p onclick="window.location.href='scene.5.first.html'" class="fade-section">
+    Keep speaking <i class="fas fa-arrow-right"></i>
+  </p>
+
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeSections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daughters of Dawn</title>
+  <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #fff8f2, #fdece4);
+      color: #333;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.8;
+    }
+
+    p {
+      width: 90%;
+      max-width: 800px;
+      margin: 80px auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1.8s ease forwards;
+    }
+
+    img {
+      display: block;
+      width: 90%;
+      max-width: 850px;
+      margin: 60px auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(60px);
+      animation: fadeUp 2s ease forwards;
+      margin-top: 0;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p:last-of-type {
+      text-align: center;
+      margin-top: 0;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: #0056b3;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    p:last-of-type:hover {
+      color: #d17b00;
+      transform: scale(1.05);
+    }
+
+    .fade-section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.3s ease, transform 1.3s ease;
+    }
+
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+   
+
+    @media (max-width: 768px) {
+      body { padding: 15px; }
+      p { font-size: 0.95rem; margin: 60px auto; }
+      img { width: 100%; margin: 40px auto; }
+      p:last-of-type { font-size: 1.1rem; }
+    }
+
+    @media (max-width: 480px) {
+      p { font-size: 0.9rem; margin: 40px auto; }
+      img { width: 100%; margin: 30px auto; }
+      p:last-of-type { font-size: 1rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <p class="fade-section">
+    In the city, Laila encountered a community of young women who, like herself, carried both visible and invisible scars—marks of pain, endurance, and survival. 
+    They shared stories born from oppression but shaped by resilience. 
+    United by a common purpose, they began to transform their experiences into action. 
+    Together, they wrote words that demanded to be heard, raised their voices against silence, and marched toward a vision of freedom and equality.
+    The same world that had once sought to silence them now found itself compelled to listen. 
+    What had once been faint whispers in the darkness grew into a chorus of defiance and hope. 
+    Their collective voices, once restrained by fear and injustice, evolved into a powerful symphony of change, echoing through streets, schools, and the hearts of countless others who longed for liberation.
+  </p>
+
+  <img class="fade-section" src="./Firefly_A group of young Muslim women standing together in an urban street at dusk, holding n 838394.png" alt="">
+
+  <p onclick="window.location.href='scene.5.first.html'" class="fade-section">
+    Keep speaking <i class="fas fa-arrow-right"></i>
+  </p>
+
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeSections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daughters of Dawn</title>
+  <link rel="shortcut icon"
+    href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #fff8f2, #fdece4);
+      color: #333;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.8;
+    }
+
+    p {
+      width: 90%;
+      max-width: 800px;
+      margin: 80px auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.3s ease, transform 1.3s ease;
+    }
+
+    img {
+      display: block;
+      width: 90%;
+      max-width: 850px;
+      margin: 60px auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.3s ease, transform 1.3s ease;
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: #0056b3;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    p:last-of-type:hover {
+      color: #d17b00;
+      transform: scale(1.05);
+    }
+
+    .fade-section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.3s ease, transform 1.3s ease;
+    }
+
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- Tablet (768px - 1024px) ---------- */
+    @media (max-width: 1024px) {
+      p {
+        font-size: 1rem;
+        margin: 60px auto;
+      }
+
+      img {
+        width: 95%;
+        margin: 50px auto;
+      }
+
+      p:last-of-type {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* ---------- Mobile (under 768px) ---------- */
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin: 50px auto;
+      }
+
+      img {
+        width: 100%;
+        margin: 40px auto;
+      }
+
+      p:last-of-type {
+        font-size: 1rem;
+      }
+    }
+
+    /* ---------- Small Mobile (under 480px) ---------- */
+    @media (max-width: 480px) {
+      p {
+        font-size: 0.9rem;
+        margin: 35px auto;
+        line-height: 1.6;
+      }
+
+      img {
+        width: 100%;
+        margin: 30px auto;
+      }
+
+      p:last-of-type {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* ---------- Extra Small Mobile (under 360px) ---------- */
+    @media (max-width: 360px) {
+      p {
+        font-size: 0.85rem;
+        margin: 30px auto;
+      }
+
+      p:last-of-type {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <p class="fade-section">
+    In the city, Laila encountered a community of young women who, like herself, carried both visible and invisible
+    scars—marks of pain, endurance, and survival.
+    They shared stories born from oppression but shaped by resilience.
+    United by a common purpose, they began to transform their experiences into action.
+    Together, they wrote words that demanded to be heard, raised their voices against silence, and marched toward a vision
+    of freedom and equality.
+    The same world that had once sought to silence them now found itself compelled to listen.
+    What had once been faint whispers in the darkness grew into a chorus of defiance and hope.
+    Their collective voices, once restrained by fear and injustice, evolved into a powerful symphony of change, echoing
+    through streets, schools, and the hearts of countless others who longed for liberation.
+  </p>
+
+  <img class="fade-section"
+    src="./Firefly_A group of young Muslim women standing together in an urban street at dusk, holding n 838394.png"
+    alt="A group of young Muslim women standing together">
+
+  <p onclick="window.location.href='scene.5.first.html'" class="fade-section">
+    Keep speaking <i class="fas fa-arrow-right"></i>
+  </p>
+
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeSections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+
+</html>

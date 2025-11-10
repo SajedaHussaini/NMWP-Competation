@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daughters of Dawn</title>
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .no {
+            height: 70vh;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-out;
+            object-fit: cover;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            position: relative;
+        }
+
+        .img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: flex;
+            padding-right: 10px;
+            margin-top: 15px;
+        }
+
+        .img:hover {
+            transform: scale(1.1);
+        }
+
+        .p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+            max-width: 800px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .next {
+            text-align: left;
+            line-height: 40px;
+            color: brown;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .next:hover {
+            color: chocolate;
+            cursor: pointer;
+        }
+
+        .f {
+            margin-bottom: 90px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 35px;
+            }
+
+            .no {
+                width: 100%;
+                height: 55vh;
+                border-radius: 15px;
+            }
+
+            .img {
+                height: 50px;
+                width: 50px;
+                margin-top: 10px;
+            }
+
+            .p {
+                font-size: 1rem;
+                line-height: 1.5;
+                max-width: 95%;
+            }
+
+            .next {
+                font-size: 1rem;
+                line-height: 35px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="no" src="https://anisdaily.com/wp-content/uploads/2025/08/6806164_706.jpg" alt="Main Image">
+        <img class="img" id="playImage" src="https://i.pinimg.com/1200x/a7/52/8f/a7528ff3cb3ea9ccf2574ee03b891f57.jpg" alt="Play Button">
+        <audio id="audioPlayer" src="./WhatsApp Audio 2025-11-09 at 11.31.06 PM.mpeg" loop></audio>
+
+        <p class="p">
+            The mountains remembered the laughter of boys walking to school — and the silence of girls left behind.
+            Laila was one of those girls. She used to dream of chalk and books, but dreams were forbidden there.
+            The mountains watched over them as if they understood — as if they knew that while the boys played and
+            learned, the girls like her were bound by silence.
+            In those mountains, every stone, every tree, seemed to whisper of freedom — a freedom she was never supposed
+            to know. But deep within her, something stirred. She wasn’t ready to stay quiet. Not yet.
+        </p><br><b><br></b>
+
+        <p class="next" onclick="window.location.href='scene.1.first.html'">Listen to her story</p>
+        <p class="next" onclick="window.location.href='scene.1.second.html'">See her memories</p>
+        <p class="next" onclick="window.location.href='scene.1.third.html'">Stay Silent</p>
+        <div class="f"></div>
+    </header>
+
+    <script>
+        const playImage = document.getElementById("playImage");
+        const audioPlayer = document.getElementById("audioPlayer");
+
+        playImage.addEventListener("click", () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+            } else {
+                audioPlayer.pause();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

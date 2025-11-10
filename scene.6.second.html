@@ -1,0 +1,513 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daughters of Dawn</title>
+  <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg-1: #fbfbfd;
+      --bg-2: #eef6ff;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #1f3d7a; 
+      --gold: #d4a60a;
+      --radius: 18px;
+      --glass: rgba(255,255,255,0.7);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    body{
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:48px 20px;
+    }
+
+    .wrap{
+      max-width:1100px;
+      width:100%;
+      display:grid;
+      grid-template-columns: 1fr 440px;
+      gap:36px;
+      align-items:start;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,252,0.96));
+      border-radius: var(--radius);
+      padding:34px 36px;
+      box-shadow: 0 10px 30px rgba(17,24,39,0.06);
+      position:relative;
+      overflow:hidden;
+      min-height:360px;
+      transform: translateY(12px);
+      transition: transform .6s cubic-bezier(.2,.9,.2,1);
+    }
+
+    .card:hover{ transform: translateY(0); }
+
+    .kicker{
+      display:inline-block;
+      font-size:13px;
+      font-weight:600;
+      color:var(--accent);
+      background: linear-gradient(90deg, rgba(31,61,122,0.08), rgba(212,166,10,0.04));
+      padding:6px 10px;
+      border-radius:10px;
+      margin-bottom:14px;
+      letter-spacing:.6px;
+    }
+
+    h1{
+      font-family: "Playfair Display", serif;
+      font-size:26px;
+      color:#0b1220;
+      margin-bottom:12px;
+      line-height:1.08;
+    }
+
+    p.lead{
+      color:#374151;
+      font-size:16px;
+      line-height:1.75;
+      margin-bottom:20px;
+      text-align:justify;
+      text-justify:inter-word;
+    }
+
+    p.small{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+      margin-top:12px;
+      text-align:justify;
+    }
+
+    .visual {
+      position:relative;
+      height:100%;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      gap:16px;
+      flex-direction:column;
+    }
+
+    .photo {
+      width:100%;
+      max-width:420px;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+      background:linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
+      position:relative;
+      transform: translateY(18px);
+      transition: transform .6s cubic-bezier(.2,.9,.2,1);
+    }
+
+    .photo img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      aspect-ratio: 16/10;
+      filter: contrast(1.02) saturate(.98);
+      transform: translateY(0);
+      transition: transform .9s ease-out;
+    }
+
+    .photo[data-parallax="true"] img {
+      will-change: transform;
+    }
+
+
+    .caption{
+      font-size:13px;
+      color:var(--muted);
+      text-align:center;
+      margin-top:8px;
+    }
+
+    .back {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:var(--accent);
+      color:white;
+      border-radius:999px;
+      padding:10px 14px;
+      border:none;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow: 0 6px 18px rgba(31,61,122,0.18);
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .back i{
+      display:inline-block;
+      width:18px;height:18px;
+      text-align:center;
+      line-height:18px;
+      font-style:normal;
+    }
+
+    @media (max-width:980px){
+      .wrap{ grid-template-columns: 1fr; padding-bottom:60px; gap:20px }
+      .visual{ order:-1; align-items:center }
+      .card{ padding:28px }
+    }
+
+    .reveal {
+      opacity:0;
+      transform: translateY(24px);
+      transition:opacity .8s ease, transform .8s cubic-bezier(.2,.9,.2,1);
+    }
+    .reveal.show {
+      opacity:1;
+      transform: translateY(0);
+    }
+
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="title">
+    <section class="card reveal" aria-labelledby="title">
+      <h1 id="title">She addressed the world</h1>
+
+      <p class="lead">
+        Laila stood before the assembly of the United Nations, her posture composed and her determination unwavering.
+        She spoke with clarity and conviction about her personal journey, the struggles of countless girls whose voices
+        had been suppressed, and the emancipatory power of education as an instrument of social transformation.
+      </p>
+
+      <p class="small">
+        “You cannot silence the wind,” she proclaimed; the phrase reverberated throughout the chamber and, for a brief
+        instant, produced a profound hush — then a wave of sustained applause. In that instant, her formerly muted voice
+        was transfigured into a collective moral declaration representing every girl and woman who had been denied the
+        right to speak and be heard.
+      </p>
+
+      <div style="margin-top:22px; display:flex; gap:12px; align-items:center;">
+        <a class="back" href="scene.6.third.html" aria-label="Back to scenes"><i>⟶</i> Stay silent- but free</a>
+        <div style="color:var(--muted); font-size:13px;">— A moment of global witness</div>
+      </div>
+    </section>
+
+    <aside class="visual">
+      <div class="photo reveal" data-parallax="true">
+  
+        <img src="https://img.freepik.com/premium-photo/ai-generative-muslim-woman-public-speaker_784584-6113.jpg" alt="Woman speaking at an international assembly" id="parallaxImg">
+      </div>
+      <div class="caption reveal">Laila at the UN — testimony that became a collective voice</div>
+    </aside>
+  </main>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('show');
+      });
+    }, { threshold: 0.18 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    const parallaxImg = document.getElementById('parallaxImg');
+    if (parallaxImg) {
+      window.addEventListener('scroll', () => {
+        const rect = parallaxImg.getBoundingClientRect();
+        const center = window.innerHeight / 2;
+        const distance = rect.top - center;
+        parallaxImg.style.transform = `translateY(${Math.max(-12, Math.min(12, -distance * 0.03))}px)`;
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daughters of Dawn</title>
+  <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg-1: #fbfbfd;
+      --bg-2: #eef6ff;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #1f3d7a; 
+      --gold: #d4a60a;
+      --radius: 18px;
+      --glass: rgba(255,255,255,0.7);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    body{
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:48px 20px;
+      overflow-x:hidden;
+    }
+
+    .wrap{
+      max-width:1100px;
+      width:100%;
+      display:grid;
+      grid-template-columns: 1fr 440px;
+      gap:36px;
+      align-items:start;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,252,0.96));
+      border-radius: var(--radius);
+      padding:34px 36px;
+      box-shadow: 0 10px 30px rgba(17,24,39,0.06);
+      position:relative;
+      overflow:hidden;
+      min-height:360px;
+      transform: translateY(12px);
+      transition: transform .6s cubic-bezier(.2,.9,.2,1);
+    }
+
+    .card:hover{ transform: translateY(0); }
+
+    h1{
+      font-family: "Playfair Display", serif;
+      font-size:26px;
+      color:#0b1220;
+      margin-bottom:12px;
+      line-height:1.08;
+    }
+
+    p.lead{
+      color:#374151;
+      font-size:16px;
+      line-height:1.75;
+      margin-bottom:20px;
+      text-align:justify;
+      text-justify:inter-word;
+    }
+
+    p.small{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+      margin-top:12px;
+      text-align:justify;
+    }
+
+    .visual {
+      position:relative;
+      height:100%;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      gap:16px;
+      flex-direction:column;
+    }
+
+    .photo {
+      width:100%;
+      max-width:420px;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+      background:linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
+      position:relative;
+      transform: translateY(18px);
+      transition: transform .6s cubic-bezier(.2,.9,.2,1);
+    }
+
+    .photo img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      aspect-ratio: 16/10;
+      filter: contrast(1.02) saturate(.98);
+      transform: translateY(0);
+      transition: transform .9s ease-out;
+    }
+
+    .caption{
+      font-size:13px;
+      color:var(--muted);
+      text-align:center;
+      margin-top:8px;
+    }
+
+    .back {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:var(--accent);
+      color:white;
+      border-radius:999px;
+      padding:10px 14px;
+      border:none;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow: 0 6px 18px rgba(31,61,122,0.18);
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .back i{
+      display:inline-block;
+      width:18px;height:18px;
+      text-align:center;
+      line-height:18px;
+      font-style:normal;
+    }
+
+    /* Small screens */
+    @media (max-width:980px){
+      .wrap{ grid-template-columns: 1fr; padding-bottom:60px; gap:20px }
+      .visual{ order:-1; align-items:center }
+      .card{ padding:28px }
+      h1{ font-size:24px; }
+      p.lead{ font-size:15px; line-height:1.6; }
+      p.small{ font-size:13px; line-height:1.5; }
+    }
+
+    @media (max-width:768px){
+      body{ padding:32px 16px; }
+      .card{ padding:24px }
+      h1{ font-size:22px; }
+      p.lead{ font-size:14px; line-height:1.55; }
+      p.small{ font-size:12.5px; line-height:1.4; }
+      .photo{ max-width:100%; height:auto; }
+      .caption{ font-size:12px; }
+      .back{ font-size:13px; padding:8px 12px; }
+    }
+
+    @media (max-width:480px){
+      body{ padding:24px 12px; }
+      .card{ padding:20px }
+      h1{ font-size:20px; }
+      p.lead{ font-size:13px; line-height:1.5; }
+      p.small{ font-size:12px; line-height:1.4; }
+      .photo{ width:100%; height:auto; }
+      .caption{ font-size:11px; }
+      .back{ font-size:12px; padding:6px 10px; }
+    }
+
+    @media (max-width:360px){
+      body{ padding:16px 10px; }
+      .card{ padding:16px }
+      h1{ font-size:18px; }
+      p.lead{ font-size:12.5px; line-height:1.4; }
+      p.small{ font-size:11.5px; line-height:1.35; }
+      .caption{ font-size:10px; }
+      .back{ font-size:11px; padding:5px 8px; }
+    }
+
+    /* Reveal animation */
+    .reveal {
+      opacity:0;
+      transform: translateY(24px);
+      transition:opacity .8s ease, transform .8s cubic-bezier(.2,.9,.2,1);
+    }
+    .reveal.show {
+      opacity:1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap" role="main" aria-labelledby="title">
+    <!-- TEXT CARD -->
+    <section class="card reveal" aria-labelledby="title">
+      <h1 id="title">She addressed the world</h1>
+
+      <p class="lead">
+        Laila stood before the assembly of the United Nations, her posture composed and her determination unwavering.
+        She spoke with clarity and conviction about her personal journey, the struggles of countless girls whose voices
+        had been suppressed, and the emancipatory power of education as an instrument of social transformation.
+      </p>
+
+      <p class="small">
+        “You cannot silence the wind,” she proclaimed; the phrase reverberated throughout the chamber and, for a brief
+        instant, produced a profound hush — then a wave of sustained applause. In that instant, her formerly muted voice
+        was transfigured into a collective moral declaration representing every girl and woman who had been denied the
+        right to speak and be heard.
+      </p>
+
+      <div style="margin-top:22px; display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <a class="back" href="scene.6.third.html" aria-label="Back to scenes"><i>⟶</i> Stay silent- but free</a>
+        <div style="color:var(--muted); font-size:13px;">— A moment of global witness</div>
+      </div>
+    </section>
+
+    <!-- VISUAL COLUMN -->
+    <aside class="visual">
+      <div class="photo reveal" data-parallax="true">
+        <img src="https://img.freepik.com/premium-photo/ai-generative-muslim-woman-public-speaker_784584-6113.jpg" alt="Woman speaking at an international assembly" id="parallaxImg">
+      </div>
+      <div class="caption reveal">Laila at the UN — testimony that became a collective voice</div>
+    </aside>
+  </main>
+
+  <script>
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('show');
+      });
+    }, { threshold: 0.18 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // Parallax image subtle effect on scroll
+    const parallaxImg = document.getElementById('parallaxImg');
+    if (parallaxImg) {
+      window.addEventListener('scroll', () => {
+        const rect = parallaxImg.getBoundingClientRect();
+        const center = window.innerHeight / 2;
+        const distance = rect.top - center;
+        parallaxImg.style.transform = `translateY(${Math.max(-12, Math.min(12, -distance * 0.03))}px)`;
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daughters of Dawn</title>
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to bottom, #fdf6e3, #fff);
+        color: #333;
+        line-height: 1.8;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 900px;
+        display: block;
+        margin: 40px auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        transition: transform 1s ease, opacity 1s ease;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    p {
+        max-width: 900px;
+        margin: 30px auto;
+        font-size: 1.1rem;
+        line-height: 1.9;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        opacity: 0;
+        transform: translateY(30px);
+        transition: transform 1s ease, opacity 1s ease;
+    }
+
+    button {
+        display: block;
+        margin: 40px auto;
+        padding: 12px 25px;
+        background: rgb(30, 30, 74);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    button:hover {
+        transform: translateY(-3px);
+    }
+
+    .visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+</style>
+
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/865764328/photo/young-muslim-women-cooperating-preparing-a-school-exam.jpg?s=1024x1024&w=is&k=20&c=isf9DrSOGm62eIhHDRFSAcJmgz9eyerKdfQWzZ3bt9M=" alt="">
+    <button onclick="window.location.href='before scenes.html'"><i class="fas fa-arrow-left"></i></button>
+    <p>Laila, supported by the other girls, established a movement named Daughters of Dawn. Operating discreetly, they conducted lessons in hidden corners, vacant houses, and abandoned buildings. They shared knowledge among themselves and extended instruction to any girl they encountered who longed for freedom. Gradually, the light of education began to illuminate the darkness. Their efforts transcended mere teaching; they ignited an enduring flame of empowerment and liberation that could never be extinguished.</p>
+    
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('img, p').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

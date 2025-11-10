@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daughters of Dawn</title>
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f3e9dc, #f5efe6);
+            font-family: 'Inter', sans-serif;
+            color: #3b2f2f;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        img {
+            width: 70%;
+            max-width: 750px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            margin-top: 25px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1rem;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            font-family: 'Playfair Display', serif;
+            opacity: 0;
+            animation: fadeIn 2.5s ease forwards;
+            animation-delay: 1s;
+        }
+
+        button {
+            color: #6a88c0;
+            border: none;
+            border-radius: 50%;
+            text-decoration: underline;
+            font-size: 1.2rem;
+            margin: 20px;
+            cursor: pointer;
+            transition: background 0.4s, transform 0.4s;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        button:hover {
+            color: #d4b000;
+            transform: scale(1.1);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(255, 223, 186, 0.25), transparent 60%);
+            z-index: -1;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        @media (max-width: 768px) {
+            body{
+                height: 100vh;
+            }
+            p{
+                margin-right: 20px;
+                margin-left: 20px;
+                line-height: 1.8;
+                font-size: 1.1rem;
+            }
+            button{
+                margin-top: 10px;
+                margin-bottom: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="https://images.pexels.com/photos/9398206/pexels-photo-9398206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Laila returns to her village">
+    <p>Years later, Laila returned to her village—a place both familiar and changed. The landscape bore the marks of time and memory. At the center stood the old walnut tree, half-burned yet half in bloom, embodying both destruction and renewal. It stood as a living testament to the endurance of her people—their losses, their resilience, and their rebirth. The surrounding mountains, once silent witnesses to her pain and endurance, seemed unchanged, yet they carried the echoes of the past within their vastness. They remembered her whispered dreams and stolen words, the fragments of a story carved into their silence. As she stood once more before them, it felt as though the land itself had been waiting for her return.</p>
+    <button onclick="window.location.href='scene.6.first.html'">Plant the new tree<i class="fas fa-arrow-right"></i></button>
+</body>
+</html>

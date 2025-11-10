@@ -1,0 +1,386 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daughthers of Dawn</title>
+<link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Arial, sans-serif;
+  background-color:#f4f4f4;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  overflow-x:hidden;
+}
+.image{
+  height:65vh;
+  width:50%;
+  border-radius:10px;
+  margin-top:40px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 1s ease-out, transform 1s ease-out;
+}
+.context{
+  max-width:1000px;
+  margin:30px;
+  line-height:30px;
+  text-align:justify;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 1s ease-out, transform 1s ease-out;
+}
+button{
+    background-color: rgb(30, 30, 74);
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    align-self: flex-start;
+    margin-left: 95px;
+    border: none;
+}
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+footer{
+    margin-bottom: 55px;
+}
+</style>
+</head>
+
+<body>
+<img class="image" src="https://media.istockphoto.com/id/494024058/photo/sad-girl-is-sitting-on-the-floor.jpg?s=612x612&w=0&k=20&c=MUpUp8e6i1CT2uRQCWIlZcpSG6n5AUsVSxcgU-rorcI=" alt="">
+<button onclick="window.location.href='before scenes.html'"><i class="fas fa-arrow-left"></i></button>
+
+<p class="context">
+She told herself silence was safety. She thought that if she stayed quiet, they couldn’t hurt her.
+But silence wasn’t peace. It wasn’t safety. It was a slow death.
+Each day she stayed silent, she felt like she was fading away, becoming a shadow of the girl she used to be.
+The more she obeyed, the more invisible she became.
+And then, one day, she couldn’t take it anymore. She looked at herself in the mirror and whispered,
+“I will not be silent anymore.” From that moment on, silence would not be her protector. It would be her enemy.
+</p>
+
+<footer>
+</footer>
+
+<script>
+function revealOnScroll() {
+  const elements = document.querySelectorAll('.image, .context');
+  const triggerBottom = window.innerHeight * 0.85;
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < triggerBottom){
+      el.classList.add('show');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daughthers of Dawn</title>
+<link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Arial, sans-serif;
+  background-color:#f4f4f4;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  overflow-x:hidden;
+}
+.image{
+  height:65vh;
+  width:50%;
+  border-radius:10px;
+  margin-top:40px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 1s ease-out, transform 1s ease-out;
+  object-fit:cover;
+}
+.context{
+  max-width:1000px;
+  margin:30px;
+  line-height:30px;
+  text-align:justify;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 1s ease-out, transform 1s ease-out;
+}
+button{
+    background-color: rgb(30, 30, 74);
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    align-self: flex-start;
+    margin-left: 95px;
+    border: none;
+}
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+footer{
+    margin-bottom: 55px;
+}
+
+/* 🌸 ریسپانسیو برای موبایل */
+@media (max-width: 500px) {
+  body{
+    padding:10px;
+  }
+  .image{
+    width:90%;
+    height:50vh;
+    margin-top:20px;
+  }
+  .context{
+    max-width:95%;
+    padding:10px;
+    font-size:0.95rem;
+    line-height:30px;
+    margin:15px;
+  }
+  button{
+    margin-left:0;
+    align-self:left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size:14px;
+    padding:8px 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+<img class="image" src="https://media.istockphoto.com/id/494024058/photo/sad-girl-is-sitting-on-the-floor.jpg?s=612x612&w=0&k=20&c=MUpUp8e6i1CT2uRQCWIlZcpSG6n5AUsVSxcgU-rorcI=" alt="">
+<button onclick="window.location.href='before scenes.html'"><i class="fas fa-arrow-left"></i></button>
+
+<p class="context">
+She told herself silence was safety. She thought that if she stayed quiet, they couldn’t hurt her.
+But silence wasn’t peace. It wasn’t safety. It was a slow death.
+Each day she stayed silent, she felt like she was fading away, becoming a shadow of the girl she used to be.
+The more she obeyed, the more invisible she became.
+And then, one day, she couldn’t take it anymore. She looked at herself in the mirror and whispered,
+“I will not be silent anymore.” From that moment on, silence would not be her protector. It would be her enemy.
+</p>
+
+<footer></footer>
+
+<script>
+function revealOnScroll() {
+  const elements = document.querySelectorAll('.image, .context');
+  const triggerBottom = window.innerHeight * 0.85;
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < triggerBottom){
+      el.classList.add('show');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daughthers of Dawn</title>
+<link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Arial, sans-serif;
+  background-color:#f4f4f4;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  overflow-x:hidden;
+}
+.image{
+  height:65vh;
+  width:50%;
+  border-radius:10px;
+  margin-top:40px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 1s ease-out, transform 1s ease-out;
+  object-fit:cover;
+}
+.context{
+  max-width:1000px;
+  margin:30px;
+  line-height:30px;
+  text-align:justify;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 1s ease-out, transform 1s ease-out;
+}
+button{
+    background-color: rgb(30, 30, 74);
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    align-self: flex-start;
+    margin-left: 95px;
+    border: none;
+}
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+footer{
+    margin-bottom: 55px;
+}
+
+/* 🌿 ریسپانسیو برای لپ‌تاپ‌ها و تبلت‌ها */
+@media (max-width: 1024px) {
+  .image{
+    width:60%;
+    height:auto;
+  }
+  .context{
+    max-width:90%;
+    font-size:1rem;
+  }
+}
+
+/* 🌸 ریسپانسیو برای موبایل */
+@media (max-width: 600px) {
+  body{
+    padding:10px;
+  }
+  .image{
+    width:90%;
+    height:auto;
+    margin-top:20px;
+  }
+  .context{
+    max-width:95%;
+    padding:10px;
+    font-size:0.95rem;
+    line-height:28px;
+    margin:15px;
+  }
+  button{
+    align-self:flex-start;
+    margin:15px 0 10px 10px;
+    font-size:14px;
+    padding:8px 14px;
+  }
+}
+
+/* 📱 برای گوشی‌های خیلی کوچک */
+@media (max-width: 400px) {
+  .image{
+    width:100%;
+  }
+  .context{
+    font-size:0.9rem;
+    line-height:26px;
+  }
+  button{
+    font-size:13px;
+    padding:7px 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+<img class="image" src="https://media.istockphoto.com/id/494024058/photo/sad-girl-is-sitting-on-the-floor.jpg?s=612x612&w=0&k=20&c=MUpUp8e6i1CT2uRQCWIlZcpSG6n5AUsVSxcgU-rorcI=" alt="">
+<button onclick="window.location.href='before scenes.html'"><i class="fas fa-arrow-left"></i></button>
+
+<p class="context">
+She told herself silence was safety. She thought that if she stayed quiet, they couldn’t hurt her.
+But silence wasn’t peace. It wasn’t safety. It was a slow death.
+Each day she stayed silent, she felt like she was fading away, becoming a shadow of the girl she used to be.
+The more she obeyed, the more invisible she became.
+And then, one day, she couldn’t take it anymore. She looked at herself in the mirror and whispered,
+“I will not be silent anymore.” From that moment on, silence would not be her protector. It would be her enemy.
+</p>
+
+<footer></footer>
+
+<script>
+function revealOnScroll() {
+  const elements = document.querySelectorAll('.image, .context');
+  const triggerBottom = window.innerHeight * 0.85;
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < triggerBottom){
+      el.classList.add('show');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daughters of Dawn</title>
+  <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0f62fe;
+      --gold: #d4b000;
+      --shadow: 0 20px 40px rgba(15,23,42,0.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(180deg,#f7f9fc 0%, #eef2f7 100%);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #0f172a;
+      padding: 28px;
+    }
+
+    /* Card wrapper */
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+    .card:hover{ transform: translateY(-6px); box-shadow: 0 26px 50px rgba(15,23,42,0.12) }
+
+    /* media */
+    .media {
+      position: relative;
+      height: 44vh;
+      min-height: 220px;
+      max-height: 420px;
+      background-size: cover;
+      background-position: center;
+      filter: saturate(.98) contrast(0.98);
+    }
+    /* soft overlay for readability */
+    .media::after{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(6,10,20,0.06) 0%, rgba(6,10,20,0.20) 80%);
+      pointer-events:none;
+    }
+
+    /* content */
+    .content{
+      padding: 28px 34px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    .kicker{
+      display:inline-block;
+      font-family: "Playfair Display", serif;
+      font-weight:600;
+      color:var(--gold);
+      font-size:14px;
+      letter-spacing:0.6px;
+      margin-bottom:6px;
+    }
+    h1{
+      margin:0;
+      font-family: "Playfair Display", serif;
+      font-size:20px;
+      color:#0b1220;
+      line-height:1.15;
+    }
+    p.lead{
+      margin:0;
+      color:#111827;
+      font-size:16px;
+      line-height:1.75;
+      text-align:justify;
+      font-family: "Playfair Display", serif;
+    }
+
+    /* subtle quote style for the block text */
+    .quote{
+      margin:0;
+      padding-left:18px;
+      border-left:3px solid rgba(208,181,0,0.14);
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.75;
+      text-align:justify;
+    }
+
+    /* action row */
+    .actions{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:6px;
+      flex-wrap:wrap;
+    }
+
+    .btn-link{
+      background:transparent;
+      border: none;
+      color: var(--accent);
+      font-weight:600;
+      font-size:15px;
+      cursor:pointer;
+      padding:10px 14px;
+      border-radius:12px;
+      transition: background .18s ease, transform .12s ease;
+      text-decoration: none;
+    }
+    .btn-link:hover{ background: rgba(15,98,254,0.06); transform: translateY(-2px) }
+
+    /* subtle small label */
+    .note{
+      color:var(--muted);
+      font-size:13px;
+      margin-left:auto;
+    }
+
+    /* responsive adjustments */
+    @media (min-width:980px){
+      .card{ grid-template-columns: 1fr 1fr; }
+      .media{ height:100%; min-height:380px; max-height:none; }
+      .content{ padding:34px 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="card" role="article" aria-labelledby="scene-title">
+    <!-- left: media (image) -->
+    <div class="media" style="background-image: url('https://media.istockphoto.com/id/2157546605/photo/muslim-speaker-in-a-workshop.jpg?s=1024x1024&w=is&k=20&c=XnBpXXqPjaGtbW4jUkUmRkg7kXTeFjj86AFSOJHB2sc=');" aria-hidden="true"></div>
+
+    <!-- right: content -->
+    <div class="content">
+      <span class="kicker">Keep speaking</span>
+      <h1 id="scene-title">Laila stands before the crowd</h1>
+
+      <p class="lead">
+        Laila stood before the crowd, her heart pounding steadily within her chest. Hundreds of faces gazed at her, yet she did not falter. Though her voice trembled, it did not break.
+      </p>
+
+      <p class="quote">
+        “Education is not a crime,” she declared, her words resonating clearly through the air. The reaction was immediate — threats of death and acts of violence followed, but Laila no longer felt fear. Her truth had been spoken, and it could not be erased. The voice that had once been silenced had now discovered its power.
+      </p>
+
+      <div class="actions">
+        <button class="btn-link" onclick="location.href='scene.5.second.html'">Stay quiet →</button>
+
+        <!-- <a class="btn-link" href="scene.5.first.html">Keep speaking</a> -->
+
+        <span class="note">Click an option to explore the next scene</span>
+      </div>
+    </div>
+  </article>
+
+</body>
+</html>

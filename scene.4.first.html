@@ -1,0 +1,343 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daughthers of Dawn</title>
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #fdf6f0, #eaeaea);
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        p {
+            max-width: 800px;
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            line-height: 1.9;
+            margin: 40px 0;
+            text-align: justify;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        img {
+            max-width: 700px;
+            width: 55%;
+            border-radius: 15px;
+            margin: 30px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        img.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        button {
+            background-color: #1e1e4a;
+            color: white;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 12px 20px;
+            border: none;
+            margin: 15px 0;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #3a3a80;
+        }
+
+        button i {
+            margin-left: 8px;
+        }
+
+@media (max-width: 768px) {
+    body{
+        height: 110vh;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 20px 10px;
+    }
+    img {
+        width: 100%;
+        margin: 15px 0;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 15px 0;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <p>She knocked on a door, trembling with exhaustion and fear. A woman opened it, her face marked by scars yet
+        radiating strength. “You are one of us,” she declared, her voice imbued with empathy and understanding.
+        The woman offered her bread, shelter, and, most importantly, the opportunity to resume her education. She
+        managed a small school dedicated to runaway girls, providing them with knowledge, guidance, and a sense of
+        purpose.
+        For the first time in a long while, the young girl felt a sense of belonging. She was no longer invisible; she
+        had regained her identity as a student and as a learner, empowered by the promise of knowledge and community.
+    </p>
+    <img src="./Firefly_A young Muslim woman, exhausted and scared, stands hesitantly at a wooden door. A kin 838394.png"
+        alt="">
+    <button onclick="window.location.href='scene.4.second.html'"><i class="fas fa-arrow-right"></i></button>
+
+    <script>
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('p, img');
+            const triggerBottom = window.innerHeight * 0.85;
+
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < triggerBottom) {
+                    el.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+    </script>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daughthers of Dawn</title>
+  <link rel="shortcut icon"
+    href="https://www.shutterstock.com/image-photo/little-asian-girl-reading-dark-600nw-2034643115.jpg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #fdf6f0, #eaeaea);
+      color: #333;
+      text-align: center;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    p {
+      max-width: 800px;
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      line-height: 1.9;
+      margin: 40px 0;
+      text-align: justify;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+      word-wrap: break-word;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    img {
+      max-width: 700px;
+      width: 55%;
+      height: auto;
+      border-radius: 15px;
+      margin: 30px 0;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    img.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    button {
+      background-color: #1e1e4a;
+      color: white;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 12px 20px;
+      border: none;
+      margin: 20px 0 40px 0;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background-color: #3a3a80;
+    }
+
+    button i {
+      margin-left: 6px;
+    }
+
+    /* -------- Tablet view -------- */
+    @media (max-width: 1024px) {
+      body {
+        padding: 40px 25px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 35px 0;
+      }
+
+      img {
+        width: 80%;
+        max-width: 600px;
+      }
+
+      button {
+        font-size: 15px;
+        padding: 10px 18px;
+      }
+    }
+
+    /* -------- Mobile view -------- */
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 15px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 25px 10px;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+        border-radius: 12px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 9px 16px;
+        margin: 20px 0 30px 0;
+      }
+    }
+
+    /* -------- Small mobile (under 400px) -------- */
+    @media (max-width: 400px) {
+      p {
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      button {
+        font-size: 13px;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p>She knocked on a door, trembling with exhaustion and fear. A woman opened it, her face marked by scars yet
+    radiating strength. “You are one of us,” she declared, her voice imbued with empathy and understanding.
+    The woman offered her bread, shelter, and, most importantly, the opportunity to resume her education. She
+    managed a small school dedicated to runaway girls, providing them with knowledge, guidance, and a sense of
+    purpose.
+    For the first time in a long while, the young girl felt a sense of belonging. She was no longer invisible; she
+    had regained her identity as a student and as a learner, empowered by the promise of knowledge and community.
+  </p>
+
+  <img src="./Firefly_A young Muslim woman, exhausted and scared, stands hesitantly at a wooden door. A kin 838394.png"
+    alt="A young Muslim woman standing at a wooden door">
+
+  <button onclick="window.location.href='scene.4.second.html'"><i class="fas fa-arrow-right"></i></button>
+
+  <script>
+    function revealOnScroll() {
+      const elements = document.querySelectorAll('p, img');
+      const triggerBottom = window.innerHeight * 0.85;
+
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < triggerBottom) {
+          el.classList.add('show');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+
+</html>
